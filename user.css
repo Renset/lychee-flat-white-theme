@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap);
+
+body {
+    font-family: "Rubik","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px
+}
+
+body,body.view {
+    background-color: #fff
+}
+
+.header--view.header--error {
+    background-color: rgba(255,255,255,.99)
+}
+
+.content .album .thumbimg {
+    background: #c7c4c4;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 5px rgb(0 0 0/50%);
+    box-shadow: 0 2px 5px rgb(0 0 0/10%)
+}
+
+.content .album .thumbimg>img[src="img/no_images.svg"] {
+    filter: invert(100%)
+}
+
+.content .album .overlay {
+    background-image: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.8))
+}
+
+.content .album .overlay a {
+    color: #383838;
+    text-shadow: none
+}
+
+.content .album .overlay,.content .photo .overlay {
+    margin: 0 1px 0 0;
+    cursor: pointer
+}
+
+.content .album .overlay h1 {
+    color: #000;
+    text-shadow: none;
+    font-weight: 500
+}
+
+.header__toolbar--albums .header__title {
+    font-size: 20px
+}
+
+.content .album:active .thumbimg,.content .album:hover .thumbimg,.content .photo .thumbimg {
+    border: 0
+}
+
+.content .album:focus .thumbimg,.content .photo .thumbimg {
+    border: 0
+}
+
+.basicContext__data .cover {
+    position: absolute;
+    background-color: #c7c4c4;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.5);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.5)
+}
+
+.header {
+    background: rgba(255,255,255,.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid #ececec
+}
+
+.header,.header__toolbar {
+    color: #222
+}
+
+.header__toolbar svg.iconic {
+    filter: invert(100%);
+    cursor: pointer
+}
+
+.header__title {
+    color: #3c3c3c
+}
+
+.header__search {
+    background-color: #eee;
+    border: 1px solid rgba(0,0,0,.1)
+}
+
+#loading.loading {
+    border: 0;
+    background-image: linear-gradient(to right,#4d8bff 0,#6398ff 47%,#359aff 53%,#005dff 100%)
+}
+
+#footer,.basicContext {
+    background: #fff
+}
+
+.basicContext {
+    color: #000;
+    border: 1px solid #ecebeb;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.05)
+}
+
+.basicContext__data .iconic {
+    filter: invert(100%)
+}
+
+.basicContext__data {
+    color: #3c3c3c
+}
+
+.content .album .thumbimg,.content .photo .thumbimg {
+    box-shadow: none
+}
+
+#imageview.full {
+    background: #fff;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px)
+}
+
+#imageview {
+    background: rgba(255,255,255,.85)
+}
+
+#imageview #image_overlay {
+    color: #000;
+    text-shadow: 1px 1px 1px #fff
+}
+
+#image_overlay>p>a>span {
+    filter: invert(.4)
+}
+
+.leftMenu {
+    filter: invert(100%);
+    transition: width .5s
+}
+
+.leftMenu.leftMenu__visible .closetxt {
+    display: none
+}
+
+.leftMenu a.linkMenu,.leftMenu.leftMenu__visible .closebtn {
+    cursor: pointer
+}
+
+.content .album .badge {
+    border: 0;
+    box-shadow: none
+}
+
+#imageview,.sidebar {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px)
+}
+
+.sidebar {
+    background: rgba(255,255,255,.8);
+    border-top: none
+}
+
+.sidebar h1,.sidebar table tr td {
+    color: #363636
+}
+
+.basicModal .basicModal__content p,.basicModal__buttons>a,.logs_diagnostics_view pre,.settings_view .setting_line p input,.settings_view .setting_line span.text,.settings_view>div p,.settings_view>div textarea {
+    color: #000
+}
+
+.basicModalContainer--fadeIn {
+    background: rgba(255,255,255,.6);
+    backdrop-filter: blur(10px)
+}
+
+.basicModal.basicModal--fadeIn,.content .photo .thumbimg {
+    background: #fff
+}
+
+.header__search {
+    color: #222
+}
+
+.basicContext .basicContext__item--separator {
+    height: 1px
+}
+
+.content .photo {
+    cursor: pointer
+}
+
+.content .photo .overlay {
+    background: rgba(0,0,0,.4)
+}
