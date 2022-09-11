@@ -169,7 +169,7 @@ body,body.view {
     color: #363636
 }
 
-.basicModal .basicModal__content p,.basicModal__buttons>a,.logs_diagnostics_view pre,.settings_view .setting_line p input,.settings_view .setting_line span.text,.settings_view>div p,.settings_view>div textarea {
+.basicModal .basicModal__content p,.basicModal__buttons>a,.logs_diagnostics_view pre,.settings_view>div p,.settings_view>div textarea {
     color: #000
 }
 
@@ -182,7 +182,7 @@ body,body.view {
     background: #fff
 }
 
-.header__search {
+.basicModal .switch label,.basicModal input.text,.header__search,.settings_view .setting_line p input,.settings_view .setting_line span.text {
     color: #222
 }
 
@@ -196,4 +196,19 @@ body,body.view {
 
 .content .photo .overlay {
     background: rgba(0,0,0,.4)
+}
+
+.basicModal .choice label .label,.basicModal .choice label input:disabled~.label {
+    color: #222
+}
+
+.basicModal .choice label .checkbox,.basicModal .choice label input:checked~.checkbox {
+    background: #fbfbfb;
+    border: 1px solid #ccc;
+    box-shadow: none
+}
+
+.basicModal .switch .slider {
+    margin-left: 10px;
+    background: #fff
 }
