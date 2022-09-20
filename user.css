@@ -77,9 +77,16 @@ body,body.view {
     color: #222
 }
 
-.header__toolbar svg.iconic {
-    filter: invert(100%);
-    cursor: pointer
+.header .button .iconic {
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+@media (hover: hover) {
+    .header .button:hover .iconic,
+    .header__title:hover .iconic {
+        fill: #000;
+    }
 }
 
 .header__title {
@@ -211,4 +218,12 @@ body,body.view {
 .basicModal .switch .slider {
     margin-left: 10px;
     background: #fff
+}
+
+.sidebar .edit .iconic {
+    filter: invert(1)
+}
+
+.sidebar .empty {
+    color: #ccc
 }
