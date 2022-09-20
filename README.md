@@ -1,7 +1,13 @@
 # Flat White Theme for Lychee
 A fresh, great looking white theme for [Lychee](https://github.com/LycheeOrg/Lychee), web based photo management tool and gallery.
 
-![CleanShot 2022-09-10 at 19 37 43@2x](https://user-images.githubusercontent.com/364877/189493046-299ebd61-979c-461e-b3ba-b9dea54e3ab9.png)
+<img width="720" alt="CleanShot 2022-09-20 at 23 10 58@2x" src="https://user-images.githubusercontent.com/364877/191355362-ea179cdf-2613-48fe-9f19-e256303a0323.png">
+
+## Features
+- Lightweight, clean theme
+- Flat design
+- Backdrop transparency styles
+- Easy to customize
 
 ## Requirements
 Lychee v4
