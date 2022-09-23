@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap);
 
+:root {
+    --main-text-color: #222;
+}
+  
+
 body {
     font-family: "Rubik","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 12px
@@ -74,7 +79,7 @@ body,body.view {
 }
 
 .header,.header__toolbar {
-    color: #222
+    color: var(--main-text-color)
 }
 
 .header .button .iconic {
@@ -190,7 +195,7 @@ body,body.view {
 }
 
 .basicModal .switch label,.basicModal input.text,.header__search,.settings_view .setting_line p input,.settings_view .setting_line span.text {
-    color: #222
+    color: var(--main-text-color)
 }
 
 .basicContext .basicContext__item--separator {
@@ -206,7 +211,7 @@ body,body.view {
 }
 
 .basicModal .choice label .label,.basicModal .choice label input:disabled~.label {
-    color: #222
+    color: var(--main-text-color)
 }
 
 .basicModal .choice label .checkbox,.basicModal .choice label input:checked~.checkbox {
@@ -226,4 +231,8 @@ body,body.view {
 
 .sidebar .empty {
     color: #ccc
+}
+
+.u2f_view_line span.text {
+    color: var(--main-text-color);
 }
