@@ -18,37 +18,48 @@ body,body.view {
     background-color: rgba(255,255,255,.99)
 }
 
-.content .album .thumbimg {
-    background: #c7c4c4;
+.content .album .thumbimg, 
+.album .thumbimg,
+.photo .thumbimg{
+    background: #e8e4e4;
     color: #fff;
     border: 0;
     cursor: pointer;
-    -webkit-box-shadow: 0 2px 5px rgb(0 0 0/50%);
-    box-shadow: 0 2px 5px rgb(0 0 0/10%)
+    -webkit-box-shadow: 0 4px 9px rgb(0 0 0/5%);
+    box-shadow: 0 4px 9px rgb(0 0 0/5%)
 }
 
-.content .album .thumbimg>img[src="img/no_images.svg"] {
+.content .album .thumbimg>img[src="img/no_images.svg"],
+.album .thumbimg>img[src="img/no_images.svg"] {
     filter: invert(100%)
 }
 
-.content .album .overlay {
-    background-image: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.8))
-}
-
-.content .album .overlay a {
-    color: #383838;
-    text-shadow: none
-}
-
-.content .album .overlay,.content .photo .overlay {
+.content .album .overlay,
+.content .photo .overlay,
+.album .overlay,
+.photo .overlay {
+    background-image: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.8));
     margin: 0 1px 0 0;
     cursor: pointer
 }
 
-.content .album .overlay h1 {
+.content .album .overlay a,
+.album .overlay a,
+.photo .overlay a {
+    color: #383838;
+    text-shadow: none
+}
+
+.content .album .overlay h1,
+.album .overlay h1 ,
+.photo .overlay h1{
     color: #000;
     text-shadow: none;
     font-weight: 500
+}
+
+.photo .overlay svg.iconic {
+    fill: #000;
 }
 
 .header__toolbar--albums .header__title {
@@ -71,25 +82,27 @@ body,body.view {
     box-shadow: 0 0 0 1px rgba(0,0,0,.5)
 }
 
-.header {
+.header, .toolbar {
     background: rgba(255,255,255,.8);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-bottom: 1px solid #ececec
 }
 
-.header,.header__toolbar {
+
+.header,.header__toolbar, .toolbar .header__title {
     color: var(--main-text-color)
 }
 
-.header .button .iconic {
+.header .button .iconic, .toolbar .button .iconic {
     cursor: pointer;
     fill: rgba(0, 0, 0, 0.5);
 }
 
 @media (hover: hover) {
     .header .button:hover .iconic,
-    .header__title:hover .iconic {
+    .header__title:hover .iconic,
+    .toolbar .button:hover .iconic {
         fill: #000;
     }
 }
@@ -98,9 +111,11 @@ body,body.view {
     color: #3c3c3c
 }
 
-.header__search {
+.header__search, 
+.toolbar input[type="text"].header__search {
     background-color: #eee;
-    border: 1px solid rgba(0,0,0,.1)
+    border: 1px solid rgba(0,0,0,.1);
+    color: #000;
 }
 
 #loading.loading {
@@ -108,7 +123,7 @@ body,body.view {
     background-image: linear-gradient(to right,#4d8bff 0,#6398ff 47%,#359aff 53%,#005dff 100%)
 }
 
-#footer,.basicContext {
+#footer,.basicContext, #lychee_footer {
     background: #fff
 }
 
@@ -149,7 +164,8 @@ body,body.view {
     filter: invert(.4)
 }
 
-.leftMenu {
+.leftMenu, 
+#lychee_left_menu_container {
     filter: invert(100%);
     transition: width .5s
 }
@@ -167,30 +183,39 @@ body,body.view {
     box-shadow: none
 }
 
-#imageview,.sidebar {
+#imageview,.sidebar, #lychee_sidebar {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px)
 }
 
-.sidebar {
+.sidebar,
+#lychee_sidebar {
     background: rgba(255,255,255,.8);
     border-top: none
 }
 
-.sidebar h1,.sidebar table tr td {
-    color: #363636
+.sidebar h1,.sidebar table tr td,
+#lychee_sidebar h1,
+#lychee_sidebar table tr td {
+    color: #363636 !important;
 }
 
 .basicModal .basicModal__content p,.basicModal__buttons>a,.logs_diagnostics_view pre,.settings_view>div p,.settings_view>div textarea {
     color: #000
 }
 
-.basicModalContainer--fadeIn {
-    background: rgba(255,255,255,.6);
+.basicModalContainer--fadeIn,
+.basicModalContainer {
+    background: rgba(255,255,255,.6) !important;
     backdrop-filter: blur(10px)
 }
 
-.basicModal.basicModal--fadeIn,.content .photo .thumbimg {
+.basicModal__content input {
+    background: #fff;
+}
+
+.basicModal.basicModal--fadeIn,.content .photo .thumbimg, 
+.album .thumbimg {
     background: #fff
 }
 
@@ -225,11 +250,13 @@ body,body.view {
     background: #fff
 }
 
-.sidebar .edit .iconic {
+.sidebar .edit .iconic,
+#lychee_sidebar .iconic {
     filter: invert(1)
 }
 
-.sidebar .empty {
+.sidebar .empty,
+#lychee_sidebar .empty {
     color: #ccc
 }
 
