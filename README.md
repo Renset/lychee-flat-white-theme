@@ -10,7 +10,7 @@ A fresh, great looking white theme for [Lychee](https://github.com/LycheeOrg/Lyc
 - Easy to customize
 
 ## Requirements
-Lychee v4.6.5
+Lychee v4.9.2
 
 ## Installation
 1. Log in to Lychee as admin
