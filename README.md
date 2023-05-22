@@ -18,6 +18,7 @@ Lychee v4.9.2
 1. In the bottom, insert contents of the file [user.css](https://github.com/Renset/lychee-flat-white-theme/blob/main/user.css) into 'Personalize your CSS' text area
 1. Click 'Change CSS'
 1. Refresh your page
+1. Don't forget to give a star if you like this theme!
 
 ## Disclaimer
 This theme is in the early development phase, and thus some unexpected issues may occur. Please use at your own risk.
