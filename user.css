@@ -9,8 +9,10 @@
     --text-main-0: #000 !important;
     --text-main-100: #000 !important;
     --text-main-200: #000 !important;
+    --text-main-300: #000 !important;
     --text-main-400: #4b4b4b !important;
     --text-hover: #000 !important;
+    --text-white: #fff !important;
 
     --bg-50: #fff !important;
     --bg-100: #fff !important;
@@ -67,12 +69,16 @@
     filter: invert(1) !important;
 }
 
-.text-neutral-200 {
+.text-text-main-200 {
     color: var(--text-main-0) !important;
 }
 
-.text-neutral-300 {
+.text-text-main-300 {
     color: var(--text-main-0) !important;
+}
+
+img.object-cover + div > * {
+    color: var(--text-white) !important;
 }
 
 .basicModalContainer {
@@ -89,8 +95,7 @@
     backdrop-filter: blur(10px) !important;
 }
 
-.bg-black,
-div.absolute.top-0.left-0.w-full.h-full.bg-black.flex.items-center.justify-center.overflow-hidden {
+.bg-black {
     background: none !important;
 }
 
