@@ -69,14 +69,6 @@
     filter: invert(1) !important;
 }
 
-.text-text-main-200 {
-    color: var(--text-main-0) !important;
-}
-
-.text-text-main-300 {
-    color: var(--text-main-0) !important;
-}
-
 img.object-cover + div > * {
     color: var(--text-white) !important;
 }
