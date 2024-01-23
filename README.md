@@ -10,7 +10,9 @@ A fresh, great looking white theme for [Lychee](https://github.com/LycheeOrg/Lyc
 - Easy to customize
 
 ## Requirements
-Lychee v4.9.2
+Lychee v5.0.3 or higher
+
+For Lychee v4, please look for [previous releases](https://github.com/Renset/lychee-flat-white-theme/releases/tag/for-lychee-4.9.2).
 
 ## Installation
 1. Log in to Lychee as admin
